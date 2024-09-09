@@ -1,0 +1,64 @@
+::selection {
+  background: #e1e;
+  color: #111;
+}
+
+:root {
+  background-color: orange;
+  background-image: linear-gradient(deepskyblue, dodgerblue, cornflowerblue, #e7f);
+  color: #111;
+}
+
+mark {
+  background-color: #e7f;
+  color: #111;
+}
+
+.ear {
+  background-image: linear-gradient(salmon, orange, coral);
+  color: #318;
+}
+
+.let {
+  background-image: linear-gradient(#7ed, #11dff1, turquoise);
+  color: #318;
+}
+
+.luv {
+  background-image: linear-gradient(#e7f, orange, skyblue);
+  color: #318;
+}
+
+.you {
+  background-image: linear-gradient(darkmagenta, #318, purple);
+  color: orange;
+}
+
+.daw {
+  background-image: linear-gradient(#11dff1, #7ed, springgreen);
+  color: #318;
+}
+
+:target {
+  filter: saturate(161%);
+}
+
+:any-link {
+  color: inherit;
+  background-color: transparent;
+}
+
+[rel] {
+  filter: sepia(23%);
+}
+
+:any-link:hover {
+  filter: drop-shadow(0 1ch 1ch fuchsia);
+}
+
+.echo {
+  color: midnightblue;
+  text-shadow:
+    -1vw 1vh 0 #fab,
+    1vw -1vh 0 #e7f;
+}

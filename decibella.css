@@ -1,0 +1,48 @@
+::selection {
+  background: darkviolet;
+  color: #ee1;
+}
+
+:root {
+  background-color: coral;
+  background-image: linear-gradient(#ee1, violet, #bae);
+  color: indigo;
+}
+
+.plum:active {
+  background-image: linear-gradient(violet, plum, yellow);
+}
+
+.pink:active {
+  background-image: linear-gradient(violet, hotpink, yellow);
+}
+
+:target {
+  background-image: linear-gradient(deeppink, mediumpurple);
+}
+
+p {
+  background-image: linear-gradient(#ee1, peachpuff);
+}
+
+[value=violet] { background: violet }
+[value=pink] { background: pink }
+[value=plum] { background: plum }
+[value=yellow] { background: yellow }
+
+.echo {
+  color: darkviolet;
+  text-shadow:
+    -1vw 1vh 0 pink,
+    1vw -1vh 0 plum;
+}
+
+:any-link {
+  color: indigo;
+  background-color: transparent;
+}
+
+a:hover {
+  background-color: mediumspringgreen;
+}
+
