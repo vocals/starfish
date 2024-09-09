@@ -1,0 +1,51 @@
+::selection {
+  background: darkviolet;
+  color: #ee1;
+}
+
+:root {
+  background-color: #ee1;
+  background-image: linear-gradient(skyblue, skyblue, deepskyblue, deepskyblue, #e1f, #fab);
+  color: #111;
+}
+
+mark {
+  background-color: #e7f;
+  color: #111;
+}
+
+.why {
+  background-image: linear-gradient(#ee7, #bed, #ee7);
+}
+
+.shy {
+  background-image: linear-gradient(lightblue, #bed, lightblue);
+}
+
+.fly {
+  background-image: linear-gradient(#de1, #7ed, #de1);
+}
+
+:active {
+  filter: saturate(109%);
+}
+
+:target {
+  filter: saturate(161%);
+}
+
+.echo {
+  color: darkviolet;
+  text-shadow:
+    -1vw 1vh 0 #ee1,
+    1vw -1vh 0 deepskyblue;
+}
+
+:any-link {
+  color: indigo;
+  background-color: transparent;
+}
+
+a:hover {
+  background-color: mediumspringgreen;
+}

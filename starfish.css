@@ -1,0 +1,116 @@
+a {
+  display: inline-flex;
+}
+
+span { padding: .382rem }
+span:first-child { padding-inline-end: 0 }
+span:last-child { padding-inline-start: 0 }
+
+ol {
+  list-style: none;
+  margin: 0 auto 1em;
+  padding: 0;
+}
+
+li a {
+  display: table;
+  padding: 1ch 1ex;
+}
+
+@media not (prefers-contrast: less) {
+  [class*="tape"] {
+    --tape-filter: saturate(161%);
+  }
+}
+
+nav a {
+  box-shadow:
+    10vw 10vh 3ex 1ex var(--tape-hex),
+    20vw 20vh 3ex 1ex var(--tape-hex),
+    30vw 30vh 3ex 1ex var(--tape-hex),
+    0 0 3ex 1ex var(--tape-hex);
+}
+
+/* https://s9a.page/tape */
+:root{--tape-filter:none;--tape-bluv:#11dff1;--tape-play:#fbbfff;--tape-loud:#eee833;--tape-luvu:#44f477;--tape-blaq:#0e0e0e;--tape-watt:#e0e0e0;--tape-hex:#e0e0e0;--tape-mix:transparent}.tape-watt{--tape-hex:var(--tape-watt)}.tape-luvu{--tape-hex:var(--tape-luvu)}.tape-loud{--tape-hex:var(--tape-loud)}.tape-play{--tape-hex:var(--tape-play)}.tape-bluv{--tape-hex:var(--tape-bluv)}.tape-flat{border-color:transparent}.tape-flap{border-color:currentColor}.tape-flow{--tape-remix:none}.tape-flow :not(.tape-skip){background-color:transparent;color:inherit}.tape-blaq,.tape-bluv,.tape-loud,.tape-luvu,.tape-play,.tape-watt{--tape-mix:var(--tape-hex);--tape-remix:none;color:var(--tape-blaq)!important;background-color:var(--tape-mix)!important;background-image:var(--tape-remix);filter:var(--tape-filter)}.tape-blaq{--tape-mix:var(--tape-blaq);color:var(--tape-hex)!important}.tape-erase,.tape-erase *{color:transparent!important}
+
+:any-link {
+  text-decoration: dotted underline;
+}
+
+:focus {
+  outline: thick groove darkviolet;
+}
+
+::selection {
+  color: var(--tape-loud);
+  background: darkviolet;
+}
+
+:root {
+  --tape-watt: powderblue;
+  --tape-play: #e7f;
+  --tape-loud: #ee1;
+  --tape-luvu: skyblue;
+  --tape-blaq: #318;
+  --tape-bluv: orange;
+}
+
+.alive {
+  --tape-remix: conic-gradient(
+    var(--tape-luvu) 0%,
+    var(--tape-luvu) 20%, 
+    var(--tape-bluv) 20%,
+    var(--tape-bluv) 40%,
+    var(--tape-play) 40%,
+    var(--tape-play) 60%,
+    var(--tape-loud) 60%,
+    var(--tape-loud) 80%,
+    var(--tape-watt) 80%,
+    var(--tape-watt) 100%
+  );
+}
+
+h1 {
+  contain: layout;
+  display: flex;
+  font-weight: inherit;
+  font-size: 1.618rem;
+  margin: 0;
+  writing-mode: vertical-lr;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: max(26px, 2vmax + 2vmin);
+  line-height: 1.618;
+}
+
+body {
+  margin: 0 auto 100vmin;
+  overflow-wrap: anywhere;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+}
+
+nav {
+  align-items: flex-start;
+  contain: layout;
+  justify-content: center;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  margin-top: 61.8vh;
+  min-height: 100vh;
+  transform: rotate(288deg);
+}
+
+@media (orientation: portrait) {
+  nav {
+    transform: rotate(0deg);
+  }
+}
+
